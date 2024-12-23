@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vercel/flags": "^2.6.3",
+    "@vercel/toolbar": "^0.1.30",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

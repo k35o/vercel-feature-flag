@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+import { Suspense } from "react";
+import { VercelToolbar } from "@vercel/toolbar/next";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -20,6 +22,9 @@ export default function RootLayout({
     <html lang="ja">
       <body className={notoSansJP.className}>
         {children}
+        <Suspense>
+          <VercelToolbar />
+        </Suspense>
       </body>
     </html>
   );
